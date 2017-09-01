@@ -21,4 +21,16 @@ class Movie
         $this->title = $title;
         $this->priceCode = $priceCode;
     }
+
+    public function getPriceCode(): int {
+        return $this->priceCode;
+    }
+
+    public function setPriceCode(int $priceCode): int {
+        $this->priceCode = $priceCode;
+    }
+
+    public function getTitle(): string {
+        return $this->title;
+    }
 }
