@@ -10,4 +10,8 @@ class NewReleasePrice extends Price {
     {
         return $daysRented * 3;
     }
+
+    public function getFrequentRenterPoints(int $daysRented): int {
+        return ($daysRented > 1) ? 2: 1;
+    }
 }
