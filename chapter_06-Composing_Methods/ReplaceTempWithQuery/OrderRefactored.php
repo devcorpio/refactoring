@@ -13,10 +13,14 @@ class Order
     private $itemPrice;
 
     public function getPrice(): double {
-        /**
-         * @var double
-         */
-        $discountFactor = 0;
+        return $this->getBasePrice() * $this->discountFactor();
+    }
+
+    private function getBasePrice() {
+        return $this->quantity * $this->itemPrice;
+    }
+
+    private function discountFactor(): double {
 
         if ($this->getBasePrice() > 1000) {
             $discountFactor = 0.95;
@@ -24,10 +28,6 @@ class Order
             $discountFactor = 0.98;
         }
 
-        return $this->getBasePrice() * $discountFactor;
-    }
-
-    private function getBasePrice() {
-        return $this->quantity * $this->itemPrice;
+        return $discountFactor;
     }
 }
