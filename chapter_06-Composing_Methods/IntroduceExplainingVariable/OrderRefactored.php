@@ -17,6 +17,6 @@ class Order
         $basePrice = $this->quantity * $this->itemPrice;
 
         return $basePrice - max(0, $this->quantity - 500)
-            * $this->itemPrice * 0.05 + min($this->quantity * $this->itemPrice * 0.1, 100.0);
+            * $this->itemPrice * 0.05 + min($basePrice * 0.1, 100.0);
     }
 }
