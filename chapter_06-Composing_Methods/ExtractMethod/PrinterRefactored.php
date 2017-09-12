@@ -8,22 +8,8 @@ class Printer
     private $order;
 
     public function printOwing(): void {
-        /**
-         * @var array
-         */
-        $elements = $this->order->getElements();
-
-        /**
-         * @var double
-         */
-        $outstanding = 0;
-
         $this->printBanner();
-
-        foreach($elements as $element) {
-            $outstanding += $element->getAmount();
-        }
-
+        $outstanding = $this->getOutstanding();
         $this->printDetails($outstanding);
     }
 
@@ -36,5 +22,23 @@ class Printer
     private function printDetails(int $outstanding): void {
         echo "name: random name";
         echo "amount: $outstanding";
+    }
+
+    private function getOutstanding(): double {
+        /**
+         * @var array
+         */
+        $elements = $this->order->getElements();
+
+        /**
+         * @var double
+         */
+        $outstanding = 0;
+
+        foreach($elements as $element) {
+            $outstanding += $element->getAmount();
+        }
+
+        return $outstanding;
     }
 }
