@@ -23,15 +23,15 @@ class Haggis {
 
 
     public function getDistanceTravelled(int $time): int {
-        $acc = $this->primaryForce / $this->mass;
+        $primaryAcc = $this->primaryForce / $this->mass;
         $primaryTime = min($time, $this->delay);
-        $result = 0.5 * $acc * $primaryTime * $primaryTime;
+        $result = 0.5 * $primaryAcc * $primaryTime * $primaryTime;
         $secondaryTime = $time - $this->delay;
 
         if ($secondaryTime) {
-            $primaryVel = $acc * $this->delay;
-            $acc = ($this->primaryForce + $this->secondaryForce) / $this->mass;
-            $result += $primaryVel * $secondaryTime + 0.5 * $acc * $secondaryTime * $secondaryTime;
+            $primaryVel = $primaryAcc * $this->delay;
+            $secondaryAcc= ($this->primaryForce + $this->secondaryForce) / $this->mass;
+            $result += $primaryVel * $secondaryTime + 0.5 * $secondaryAcc * $secondaryTime * $secondaryTime;
         }
 
         return $result;
