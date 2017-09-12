@@ -13,10 +13,10 @@ class Order
     private $itemPrice;
 
     public function price(): double {
-        // price is base price - quantity discount + shipping
         $basePrice = $this->quantity * $this->itemPrice;
         $quantityDiscount = max(0, $this->quantity - 500) * $this->itemPrice * 0.05;
+        $shipping =  min($basePrice * 0.1, 100.0);
 
-        return $basePrice - $quantityDiscount + min($basePrice * 0.1, 100.0);
+        return $basePrice - $quantityDiscount + $shipping;
     }
 }
