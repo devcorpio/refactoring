@@ -24,14 +24,17 @@ class Printer
             $outstanding += $element->getAmount();
         }
 
-        //print details
-        echo "name: random name";
-        echo "amount: $outstanding";
+        $this->printDetails($outstanding);
     }
 
     private function printBanner(): void {
         echo '*************************';
         echo '***** Customer Owes *****';
         echo '*************************';
+    }
+
+    private function printDetails(int $outstanding): void {
+        echo "name: random name";
+        echo "amount: $outstanding";
     }
 }
