@@ -12,7 +12,17 @@ class Account {
     private $daysOverdrawn;
 
     public function overdraftCharge(): double {
-        return $this->type->overdraftCharge($this->daysOverdrawn);
+        if ($this->type->isPremium()) {
+            $result = 10;
+            if ($this->daysOverdrawn > 7) {
+                $result += ($this->daysOverdrawn - 7) * 0.85;
+            }
+
+            return $result;
+
+        } else {
+            return $this->daysOverdrawn * 1.75;
+        }
     }
 
     public function bankCharge(): double {
