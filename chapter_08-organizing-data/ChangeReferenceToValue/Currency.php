@@ -17,4 +17,8 @@ class Currency {
     public function get(string $code): self {
         return new self($code);
     }
+
+    public function equals(self $arg): bool {
+        return $this->code === $arg->code;
+    }
 }
