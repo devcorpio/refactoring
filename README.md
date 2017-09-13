@@ -33,3 +33,10 @@ You can see code in chapter_07-moving_features_between_objects folder, in that c
 * remove middle man
 * introduce foreign method
 * introduce local extension
+
+### chapter 08
+
+You can see code in chapter_08-organizing-data folder, in that chapter I learned techniques like:
+
+* self encapsulated field
+* replace data value with object
