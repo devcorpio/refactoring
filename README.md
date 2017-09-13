@@ -40,3 +40,6 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 
 * self encapsulated field
 * replace data value with object
+* change reference to value
+* change value to reference
+* replace array with object
