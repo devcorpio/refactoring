@@ -6,11 +6,11 @@ class Person {
      */
     private $department;
 
-    public function getDepartment() {
-        return $this->department;
-    }
-
     public function setDepartment(Department $arg) {
         $this->department = $arg;
+    }
+
+    public function getManager(): Person {
+        return $this->department->getManager();
     }
 }
