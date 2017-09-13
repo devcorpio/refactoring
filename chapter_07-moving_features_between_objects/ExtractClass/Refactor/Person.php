@@ -7,16 +7,6 @@ class Person {
     private $name;
 
     /**
-     * @var string
-     */
-    private $officeAreaCode;
-
-    /**
-     * @var string
-     */
-    private $officeNumber;
-
-    /**
      * @var TelephoneNumber
      */
     private $officeTelephone;
@@ -27,22 +17,10 @@ class Person {
     }
 
     public function getTelephoneNumber(): string {
-        return "('".$this->officeAreaCode."') ". $this->officeNumber;
+        return $this->officeTelephone->getTelephoneNumber();
     }
 
-    public function getOfficeAreaCode(): string {
-        return $this->officeAreaCode;
-    }
-
-    public function setOfficeAreaCode(string $arg): void {
-        $this->officeAreaCode = $arg;
-    }
-
-    public function getOfficeNumber(): string {
-        return $this-$this->officeNumber;
-    }
-
-    public function setOfficeNumber(string $arg): void {
-        $this->officeNumber = $arg;
+    public function getTelephone(): TelephoneNumber {
+        return $this->officeTelephone;
     }
 }
