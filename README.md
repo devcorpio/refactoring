@@ -43,3 +43,7 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 * change reference to value
 * change value to reference
 * replace array with object
+* duplicated observed data
+* change unidirectional association to bidirectional
+
+
