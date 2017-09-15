@@ -51,4 +51,10 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 * encapsulate collection
 * replace record with data class
 * replace type code with class
+* replace type code with subclasses
+* replace type code with state/strategy
+* replace subclass with fields
 
+### chapter 08
+
+working...
