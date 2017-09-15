@@ -46,4 +46,6 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 * duplicated observed data
 * change unidirectional association to bidirectional
 * change bidirectional association to unidirectional
+* replace magic number with symbolic constant
+* encapsulate field
 
