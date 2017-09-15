@@ -55,6 +55,6 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 * replace type code with state/strategy
 * replace subclass with fields
 
-### chapter 08
+### chapter 09
 
 working...
