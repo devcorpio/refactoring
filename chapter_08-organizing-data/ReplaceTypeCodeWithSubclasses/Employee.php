@@ -1,6 +1,6 @@
 <?php
 
-class Employment {
+class Employee {
     const ENGINEER = 1;
     const SALESMAN = 2;
     const MANAGER = 3;
