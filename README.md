@@ -48,4 +48,7 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 * change bidirectional association to unidirectional
 * replace magic number with symbolic constant
 * encapsulate field
+* encapsulate collection
+* replace record with data class
+* replace type code with class
 
