@@ -45,5 +45,5 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 * replace array with object
 * duplicated observed data
 * change unidirectional association to bidirectional
-
+* change bidirectional association to unidirectional
 
