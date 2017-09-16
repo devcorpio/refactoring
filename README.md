@@ -63,5 +63,5 @@ You can see code in chapter_09-symplifying_conditionals_expressions folder, in t
 * consolidate conditional expression
 * consolidate duplicate conditionals fragments
 * remove control flag
-* replace nested conditional with guard clauses
-
+* replace nested conditional with guard clauses (including Joshua Kerievsky Version)
+* replace conditional with polymorphism
