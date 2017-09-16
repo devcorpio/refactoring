@@ -17,10 +17,14 @@ class ExampleWithOrs {
     private $isPartTime;
 
     public function disabilityAmount() {
-        if ($this->seniority < 2 || $this->monthsDisabled > 12 || $this->isPartTime) {
+        if ($this->isNotEligibleForDisability()) {
             return 0;
         }
 
         echo 'doing something';
+    }
+
+    private function isNotEligibleForDisability(): bool {
+        $this->seniority < 2 || $this->monthsDisabled > 12 || $this->isPartTime;
     }
 }
