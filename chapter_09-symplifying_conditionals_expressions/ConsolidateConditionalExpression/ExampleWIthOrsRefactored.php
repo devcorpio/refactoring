@@ -25,6 +25,6 @@ class ExampleWithOrs {
     }
 
     private function isNotEligibleForDisability(): bool {
-        $this->seniority < 2 || $this->monthsDisabled > 12 || $this->isPartTime;
+        return $this->seniority < 2 || $this->monthsDisabled > 12 || $this->isPartTime;
     }
 }
