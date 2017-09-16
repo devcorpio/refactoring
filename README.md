@@ -67,3 +67,7 @@ You can see code in chapter_09-symplifying_conditionals_expressions folder, in t
 * replace conditional with polymorphism
 * introduce null object
 * introduce assertion
+
+### chapter 10
+
+working...
