@@ -57,4 +57,8 @@ You can see code in chapter_08-organizing-data folder, in that chapter I learned
 
 ### chapter 09
 
-working...
+You can see code in chapter_09-symplifying_conditionals_expressions folder, in that chapter I learned techniques like:
+
+* decompose conditional
+* consolidate conditional expression
+
