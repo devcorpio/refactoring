@@ -66,3 +66,4 @@ You can see code in chapter_09-symplifying_conditionals_expressions folder, in t
 * replace nested conditional with guard clauses (including Joshua Kerievsky Version)
 * replace conditional with polymorphism
 * introduce null object
+* introduce assertion
