@@ -78,3 +78,5 @@ You can see code in chapter_10-Making_Method_Calls_Simpler folder, in that chapt
 * separate query from modifier
 * parameterize method
 * replace parameters with explicited methods
+* preserve whole object
+* replace parameter with method
