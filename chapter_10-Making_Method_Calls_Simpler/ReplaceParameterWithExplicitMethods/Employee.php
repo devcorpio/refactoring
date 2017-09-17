@@ -28,4 +28,10 @@ abstract class Employee {
                 throw new InvalidArgumentException('Incorrect type code value');
         }
     }
+
+
 }
+
+$engineer = Employee::create(Employee::ENGINEER);
+$salesman = Employee::create(Employee::SALESMAN);
+$manager = Employee::create(Employee::MANAGER);
