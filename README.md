@@ -70,4 +70,8 @@ You can see code in chapter_09-symplifying_conditionals_expressions folder, in t
 
 ### chapter 10
 
-working...
+You can see code in chapter_10-Making_Method_Calls_Simpler folder, in that chapter I learned techniques like:
+
+* rename method
+* add parameter
+* remove parameter
