@@ -75,3 +75,6 @@ You can see code in chapter_10-Making_Method_Calls_Simpler folder, in that chapt
 * rename method
 * add parameter
 * remove parameter
+* separate query from modifier
+* parameterize method
+* replace parameters with explicited methods
