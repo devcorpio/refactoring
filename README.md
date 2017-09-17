@@ -80,3 +80,7 @@ You can see code in chapter_10-Making_Method_Calls_Simpler folder, in that chapt
 * replace parameters with explicited methods
 * preserve whole object
 * replace parameter with method
+* introduce parameters object (range pattern)
+* remove setting method(use initializeField, as a alternative depending of your context)
+* hide method (You can use linter-tools for identify methods that should be privates)
+* replace constructor with factory method
