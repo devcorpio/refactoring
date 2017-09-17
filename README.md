@@ -7,6 +7,10 @@ Php code based on the examples of [Refactoring book](https://martinfowler.com/bo
 * Code without refactor in chapter_01
 * Code refactored in chapter_01_refactor
 
+### chapter 02, 03, 04, 05
+
+Amazing theoretical concepts and tips to learn
+
 ### chapter 06
 
 You can see code in chapter_06-Composing_Methods folder, in that chapter I learned techniques like:
@@ -86,3 +90,34 @@ You can see code in chapter_10-Making_Method_Calls_Simpler folder, in that chapt
 * replace constructor with factory method
 * encapsulate downcast
 * replace error code with exception
+* replace exception with test
+
+### chapter 11
+
+In that section I didn't upload code.
+
+* pull up field
+* pull up method
+* pull up constructor body
+* push down method
+* push down field
+* extract subclass
+* extract superclass
+* extract interface
+* form template method
+* replace inheritance with delegation
+* replace delegation with inheritance
+
+### chapter 12, 13, 14, 15
+
+Amazing theoretical concepts and tips to learn
+Last chapter was written by Kent Beck
+
+# conclusions
+
+I understand why this book is a master piece. I recommend that book
+to anybody that wanna improve substantially the quality of the code that write.
+
+This book must have PRIORITY over clean code. Having read refactoring book, 
+you can get more profit from clean code book. I have no doubt.
+
